@@ -4,7 +4,9 @@
   "description": "projeto no qual vai ler um arquivo .md, traz uma promisse com uma array de objetos, com links e descriçao.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "eslint": "eslint --fix --ext .js lib/",
+    "pretest": "npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,7 @@
   },
   "homepage": "https://github.com/VanesNery/SAP003-md-links#readme",
   "dependencies": {
-    "eslint": "^6.7.1",
+    "eslint": "^6.7.2",
     "jest": "^24.9.0",
     "test": "^0.6.0"
   },
