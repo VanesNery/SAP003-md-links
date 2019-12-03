@@ -3,13 +3,97 @@
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
-* [2. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [2. Resumo do projeto](#2-resumo-do-projeto)
+* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [4. Considerações gerais](#4-considerações-gerais)
+* [5. Critérios de aceitação mínimos do
+  projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
+* [6. Entregáveis](#6-entregáveis)
+* [7. Guias, dicas e leituras
+  complementares](#7-guias-dicas-e-leituras-complementares)
+* [8. Checklist](#8-checklist)
 
 ***
 
 ## 1. Prefácio
 
-É o projeto proposto pela Laboratoria, no qual o programa vai validar o caminho, apresentar em tela, texto referente ao link e o Hiperlink.
+[Markdown](https://pt.wikipedia.org/wiki/Markdown) é uma linguagem de marcação
+muito popular entre os programadores. É usada em muitas plataformas que
+manipulam texto (GitHub, fórum, blogs e etc), e é muito comum encontrar arquivos
+com este formato em qualquer repositório (começando pelo tradicional
+`README.md`).
+
+Os arquivos `Markdown` normalmente contém _links_ que muitas vezes estão
+quebrados, ou que já não são válidos e isso prejudica muito o valor da
+informação que está ali.
+
+Uma comunidade open source nos propôs criar uma ferramenta, usando
+[Node.js](https://nodejs.org/), que leia e analise arquivos no formato
+`Markdown`, para verificar os arquivos que contenham links e mostrar algumas
+estatísticas.
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+
+## 2. Resumo do projeto
+
+[Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript
+construído com o [motor de JavaScript V8 do
+[Chrome](https://developers.google.com/v8/). Ele vai nos permitir executar o
+JavaScript no nosso sistema operacional, seja no seu computador ou em um
+servidor, o que nos abre portas para poder interagir com sistemas, arquivos,
+redes e etc.
+
+Neste projeto vamos ficar um pouco longe do navegador para construir um programa
+que seja executado com Node.js, onde iremos aprender sobre como interagir com
+sistemas de arquivos e com o ambiente onde é executado o node (_process_, _env_,
+_stdin/stdout/stderr_), ...
+
+Este projeto você criará uma ferramenta de linha de comando (CLI) assim como a
+sua própria biblioteca (library) em JavaScript.
+
+## 3. Objetivos de aprendizagem
+
+Desenvolver sua própria biblioteca é uma experiência fundamental para qualquer
+desenvolvedora, pois te obriga a pensar na interface (API) dos seus _módulos_ e
+como ela será usada por outras desenvolvedoras. Você deve levar em conta as
+peculiaridades da linguagem, convenções e boas práticas.
+
+A seguir você pode conferir os objetivos de aprendizagem deste projeto:
+
+### Javascript
+
+* [ ] Uso de callbacks
+* [ ] Consumo de Promises
+* [ ] Criação de uma Promise
+* [ ] Módulos de JS (CommonJS vs ES Modules)
+
+### Node
+
+* [ ] Sistema de arquivos ([fs](https://nodejs.org/api/fs.html), [path](https://nodejs.org/api/path.html))
+* [ ] [package.json](https://docs.npmjs.com/files/package.json)
+* [ ] criação de módulos [(CommonJS)](https://nodejs.org/docs/latest-v0.10.x/api/modules.html)
+* [ ] Instalar e usar módulos ([npm](https://www.npmjs.com/))
+* [ ] [npm-scripts](https://docs.npmjs.com/misc/scripts)
+* [ ] CLI (Command Line Interface - Interface de Linha de Comando)
+* [ ] [http.get](https://nodejs.org/api/http.html#http_http_get_options_callback)
+
+### Testing
+
+* [ ] Testar suas funções
+* [ ] Teste assíncrono
+* [ ] Usar biblioteca de mock
+* [ ] Mock manual
+* [ ] Teste para múltiplos sistemas operacionais
+
+### Git e Github
+
+* [ ] Organização no Github
+
+### Boas práticas de desenvolvimento
+
+* [ ] Modularização
+* [ ] Nomenclatura / Semântica
+* [ ] Linting
 
 ***
 
@@ -205,11 +289,40 @@ Para esse projeto recomendamos o uso de [expressões regulares
 * [how-to-npm](https://github.com/workshopper/how-to-npm)
 * [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
 
+### Outros recursos
+
+* [Sobre Node.js - Documentação oficial](https://nodejs.org/pt-br/about/)
+* [Node.js file system - Documentação oficial](https://nodejs.org/api/fs.html)
+* [Node.js http.get - Documentação
+  oficial](https://nodejs.org/api/http.html#http_http_get_options_callback)
+* [Node.js - Wikipedia](https://pt.wikipedia.org/wiki/Node.js)
+* [What exactly is Node.js? -
+  freeCodeCamp](https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5)
+* [Node.js – O que é, como funciona e quais as
+  vantagens](https://www.opus-software.com.br/node-js/)
+* [O que é npm](https://www.hostinger.com.br/tutoriais/o-que-e-npm)
+* [Módulos, librerías, paquetes, frameworks... ¿cuál es la
+  diferencia?](http://community.laboratoria.la/t/modulos-librerias-paquetes-frameworks-cual-es-la-diferencia/175)
+* [JavaScript assíncrono: callbacks, promises e async
+  functions](https://medium.com/@alcidesqueiroz/javascript-ass%C3%ADncrono-callbacks-promises-e-async-functions-9191b8272298)
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* [Publicar
+  package](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+* [Criando um módulo
+  Node.js](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+* [Ler um
+  arquivo](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
+* [Ler um
+  diretório](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
+* [Path](https://nodejs.org/api/path.html)
+* [Criando sua CLI com
+  Node.js](https://medium.com/henriquekuwai/criando-sua-cli-com-node-js-d6dee7d03110)
+
 ## 8. Checklist
 
 ### General
 
-* [X] Poder instalar via `npm install -g <github-user>/md-links`
+* [ ] Poder instalar via `npm install -g <github-user>/md-links`
 
 ### `README.md`
 
@@ -219,16 +332,16 @@ Para esse projeto recomendamos o uso de [expressões regulares
 
 ### API `mdLinks(path)`
 
-* [X] O módulo exporta uma função com a interface (API) esperada
-* [X] Implementa suporte para arquivo individual
+* [ ] O módulo exporta uma função com a interface (API) esperada
+* [ ] Implementa suporte para arquivo individual
 
 ### CLI
 
-* [X] Possuir o executável `md-links` no path (configurado no `package.json`)
-* [X] Executar sem erros e ter o resultado esperado
+* [ ] Possuir o executável `md-links` no path (configurado no `package.json`)
+* [ ] Executar sem erros e ter o resultado esperado
 
 ### Testes
 
-* [X] Os testes unitários devem cobrir no mínimo 99,9% dos statements, functions,
+* [ ] Os testes unitários devem cobrir no mínimo 99,9% dos statements, functions,
   lines e branches.
-* [X] Rodar os tests e linter (`npm test`).
+* [ ] Rodar os tests e linter (`npm test`).
