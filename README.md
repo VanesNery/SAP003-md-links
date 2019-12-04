@@ -29,7 +29,7 @@ Local:
 $ npx md-links ./some/example.md
 ```
 
-** Como usar (Node.js)
+** Como usar (Node.js) **
 
 ```js 
 const mdLinks = require('sap003-md-links');
