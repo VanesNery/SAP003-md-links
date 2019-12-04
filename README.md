@@ -19,9 +19,25 @@ Um dos projetos proposto pela Laboratoria, Biblioteca que lê e analisa arquivos
 
 Esta biblioteca pode ser executado através do terminal da seguinte maneira:
 
+Global:
 md-links [endereço aonde está o seu arquivo]
-
+```sh
 $ md-links ./some/example.md
+```
+Local:
+```sh
+$ npx md-links ./some/example.md
+```
+
+** Como usar (Node.js)
+
+```js 
+const mdLinks = require('sap003-md-links');
+
+mdLinks("./README.md").then(links) => { console.log("links retornados");
+console.log(links);
+});
+```
 
 **Valor de retorno**
 Retorna promessa com uma matriz de objetos, em que cada objeto representa um link e contém as seguintes propriedades:
@@ -35,14 +51,14 @@ Retorna promessa com uma matriz de objetos, em que cada objeto representa um lin
 
 * Para usar esta biblioteca como requisito, você deve ter instalado os NodeJs e o NPM em seu computador.
 
-* Então você deve executar o seguinte comando no terminal:
+* Então você deve executar o seguinte comando no terminal, para instalar global:
 
 ```sh 
-npm install https://github.com/VanesNery/SAP003-md-links
+npm install -g https://github.com/VanesNery/SAP003-md-links
 ``` 
-ou 
+ou para instalar local:
 ```sh 
-npm i https://github.com/VanesNery/SAP003-md-links
+npm install -S https://github.com/VanesNery/SAP003-md-links
 ```
 ***
 
