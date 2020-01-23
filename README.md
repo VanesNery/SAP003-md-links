@@ -11,7 +11,7 @@
 
 ## 1. Prefácio
 
-Um dos projetos proposto pela Laboratoria, Biblioteca que lê e analisa arquivos no formato Markdown (.md), apresentar em tela, texto referente ao link e o Hiperlink.
+Projeto proposto pela Laboratória. Biblioteca que lê e analisa arquivos no formato Markdown (.md), para a busca de texto referente ao link e o Hiperlink.
 
 ***
 
